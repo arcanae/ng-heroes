@@ -1,7 +1,7 @@
 <h1>List of Heroes</h1>
 
 <ul>
-    <li *ngFor="let hero of liste">
+    <li *ngFor="let hero of liste" (click)="inspect(hero)">
         {{hero.name}}
     </li>
 </ul>
